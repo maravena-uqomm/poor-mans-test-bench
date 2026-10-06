@@ -1,0 +1,44 @@
+[
+    {
+        "type": "POWER",
+        "objective": "power",
+        "name": "POWER - 12",
+        "psu": {
+            "status": true,
+            "voltage": 12,
+            "current_limit": 0.6
+        },
+        "criteria": {
+            "target": 2.0,
+            "tolerance": 0.6
+        }
+    },
+    {
+        "type": "POWER",
+        "objective": "power",
+        "name": "POWER - 24",
+        "psu": {
+            "status": true,
+            "voltage": 24,
+            "current_limit": 0.6
+        },
+        "criteria": {
+            "target": 2.0,
+            "tolerance": 0.6
+        }
+    },
+    {
+        "type": "POWER",
+        "objective": "power",
+        "name": "POWER - 48",
+        "psu": {
+            "status": true,
+            "voltage": 48,
+            "current_limit": 0.6
+        },
+        "criteria": {
+            "target": 2.0,
+            "tolerance": 0.6
+        }
+    }
+]
