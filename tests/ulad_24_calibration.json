@@ -14,8 +14,8 @@
             "level": -20
         },
         "criteria": {
-            "target": -26.75,
-            "tolerance": 0.25
+            "target": -26.9,
+            "tolerance": 0.1
         }
     },
     {

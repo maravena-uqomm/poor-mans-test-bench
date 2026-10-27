@@ -124,12 +124,15 @@ def calibrate_dut(analyzer:SiglentAnalyzer, dut_setter, test, analyzer_offset=-4
     analyzer_measure = test['measure']
 
     analyzer.set_center_freq(analyzer_measure['center_freq'])
+    time.sleep(0.1)
     analyzer.set_span(analyzer_measure['span'])
+    time.sleep(0.1)
     analyzer.set_resolution_bandwidth_khz(analyzer_measure['rbw'])
-
+    time.sleep(0.1)
     analyzer.set_tracking_generator_level(analyzer_configurations['level'])
+    time.sleep(0.1)
     analyzer.set_tracking_generator("ON")
-
+    time.sleep(0.1)
     analyzer.set_marker(CENTER_FREQ_MARKER_ID, analyzer_measure['center_freq'])
 
     test_criteria = test['criteria']

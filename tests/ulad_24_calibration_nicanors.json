@@ -1,0 +1,206 @@
+[
+    {
+        "type": "CALIBRATE",
+        "objective": "gain",
+        "name": "GAIN DL - 470",
+        "side": "dl",
+        "measure": {
+            "center_freq": 470,
+            "span": 0,
+            "rbw": 0.3
+        },
+        "tg_conf": {
+            "state": true,
+            "level": -20
+        },
+        "criteria": {
+            "target": -26.75,
+            "tolerance": 0.25
+        }
+    },
+    {
+        "type": "MEASURE",
+        "objective": "gain",
+        "name": "GAIN DL - 460.3",
+        "side": "dl",
+        "measure": {
+            "center_freq": 460.3,
+            "span": 0,
+            "rbw": 0.3
+        },
+        "tg_conf": {
+            "state": true,
+            "level": -20
+        },
+        "criteria": {
+            "target": -25,
+            "tolerance": 2
+        }
+    },
+    {
+        "type": "MEASURE",
+        "objective": "gain",
+        "name": "GAIN DL - 479.7",
+        "side": "dl",
+        "measure": {
+            "center_freq": 479.7,
+            "span": 0,
+            "rbw": 0.3
+        },
+        "tg_conf": {
+            "state": true,
+            "level": -20
+        },
+        "criteria": {
+            "target": -25,
+            "tolerance": 2
+        }
+    },
+    {
+        "type": "CALIBRATE",
+        "objective": "agc",
+        "name": "AGC DL",
+        "side": "dl",
+        "measure": {
+            "center_freq": 470,
+            "span": 0,
+            "rbw": 0.3
+        },
+        "tg_conf": {
+            "state": true,
+            "level": 0
+        },
+        "criteria": {
+            "target": -2,
+            "tolerance": 0.05
+        }
+    },
+    {
+        "type": "USER-INPUT",
+        "name": "Change connections and press enter (or q to quit)",
+        "objective": "wait"
+    },
+    {
+        "type": "CALIBRATE",
+        "objective": "gain",
+        "name": "GAIN UL - 445",
+        "side": "ul",
+        "measure": {
+            "center_freq": 445,
+            "span": 0,
+            "rbw": 0.3
+        },
+        "tg_conf": {
+            "state": true,
+            "level": -20
+        },
+        "criteria": {
+            "target": -26.75,
+            "tolerance": 0.25
+        }
+    },
+    {
+        "type": "MEASURE",
+        "objective": "gain",
+        "name": "GAIN UL - 435.1",
+        "side": "ul",
+        "measure": {
+            "center_freq": 435.1,
+            "span": 0,
+            "rbw": 0.3
+        },
+        "tg_conf": {
+            "state": true,
+            "level": -20
+        },
+        "criteria": {
+            "target": -25,
+            "tolerance": 2
+        }
+    },
+    {
+        "type": "MEASURE",
+        "objective": "gain",
+        "name": "GAIN UL - 454.3",
+        "side": "ul",
+        "measure": {
+            "center_freq": 454.3,
+            "span": 0,
+            "rbw": 0.3
+        },
+        "tg_conf": {
+            "state": true,
+            "level": -20
+        },
+        "criteria": {
+            "target": -25,
+            "tolerance": 2
+        }
+    },
+    {
+        "type": "CALIBRATE",
+        "objective": "agc",
+        "name": "AGC UL",
+        "side": "ul",
+        "measure": {
+            "center_freq": 445,
+            "span": 0,
+            "rbw": 0.3
+        },
+        "tg_conf": {
+            "state": true,
+            "level": 0
+        },
+        "criteria": {
+            "target": -10,
+            "tolerance": 0.05
+        }
+    },
+    {
+        "type": "USER-INPUT",
+        "name": "Press enter to start power tests (or q to quit)",
+        "objective": "wait"
+    },
+    {
+        "type": "POWER",
+        "objective": "power",
+        "name": "POWER - 12",
+        "psu": {
+            "status": true,
+            "voltage": 12,
+            "current_limit": 0.6
+        },
+        "criteria": {
+            "target": 2.0,
+            "tolerance": 0.6
+        }
+    },
+    {
+        "type": "POWER",
+        "objective": "power",
+        "name": "POWER - 24",
+        "psu": {
+            "status": true,
+            "voltage": 24,
+            "current_limit": 0.6
+        },
+        "criteria": {
+            "target": 2.0,
+            "tolerance": 0.6
+        }
+    },
+    {
+        "type": "POWER",
+        "objective": "power",
+        "name": "POWER - 48",
+        "psu": {
+            "status": true,
+            "voltage": 48,
+            "current_limit": 0.6
+        },
+        "criteria": {
+            "target": 2.0,
+            "tolerance": 0.6
+        }
+    }
+]
